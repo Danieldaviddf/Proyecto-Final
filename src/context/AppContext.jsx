@@ -1,10 +1,10 @@
 import React, { createContext, useContext, useReducer, useEffect } from "react";
-import { appReducer, initialState } from "./AppReducer";
+import { AppReducer, initialState } from "./AppReducer";
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(appReducer, initialState);
+  const [state, dispatch] = useReducer(AppReducer, initialState);
 
   async function peliculas() {
     try {
