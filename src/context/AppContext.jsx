@@ -1,0 +1,66 @@
+export const initialState = {
+  Populares: [],
+  Favoritos: JSON.parse(localStorage.getItem("favoritos")) || [],
+  Accion: [],
+  Comedia:[],
+  Terror:[],
+  Animadas:[], 
+
+
+};
+
+export const appReducer = (state, action) => {
+  switch (action.type) {
+    
+    case "set_Populares":
+      return {
+        ...state,
+        Populares: action.payload,
+      };
+
+    case "set_Accion":
+      return {
+        ...state,
+        Accion: action.payload,
+      };
+
+    case "set_Comedia":
+      return {
+        ...state,
+        Comedia: action.payload,
+      };
+    case "set_Terror":
+      return {
+        ...state,
+        Terror: action.payload,
+      };
+    case "set_Animadas":
+      return {
+        ...state,
+        Animadas: action.payload,
+      };
+
+       case "set_Favoritos":
+        const existe= state.Favoritos.find((item)=> item.id === action.payload.id);
+        if (existe) {
+          return state;
+        }
+        else {
+      return {
+        ...state,
+        Favoritos: [...state.Favoritos, action.payload],
+      }};
+
+
+    
+
+      case "remove_Favoritos":
+        return {
+          ...state,
+          Favoritos: state.Favoritos.filter((item) => item.id !== action.payload.id),
+        };
+
+    default:
+      return state;
+  };
+};
