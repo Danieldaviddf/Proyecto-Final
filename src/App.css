@@ -1,0 +1,62 @@
+.listaP{
+
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x:auto;
+  overflow-y: auto;
+   scroll-behavior: smooth;
+  gap: 20px;
+  padding: 35px;
+
+ 
+}
+.listaP::-webkit-scrollbar {
+  display: none;
+}
+
+.listaP {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.listaP > div {
+  min-width: 250px;
+ 
+  flex-shrink: 60;
+}
+
+.botonDerecho {
+
+background-color: rgba(0, 0, 0, 0.863);
+  transform: translateY(-50%);
+}
+
+body{
+
+  background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+
+}
+
+.titulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-3xl{
+  font-family: 'Poppins', sans-serif ; 
+  font-size: 30px;
+  padding-left: 30px;
+
+  
+}
+
+.textF{
+  font-family: 'Poppins', sans-serif ; 
+  font-size: 40px;
+  padding-left: 30px;
+}
