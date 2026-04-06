@@ -1,8 +1,13 @@
-import React from 'react'
+import React from "react";  
 
-const Categorias = () => {
+function Categorias() {
   return (
-    <div>Categotias</div>
-  )
-}
+    <div>
+      <h1>Categorias</h1>
+      <p>Categorias</p>
+    </div>
+  );
+}                   
+
+
 export default Categorias;
