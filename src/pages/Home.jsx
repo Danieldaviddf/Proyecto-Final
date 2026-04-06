@@ -1,9 +1,9 @@
 import React from "react";
-import PeliculasPopulares from "../componentes/PeliculasPopulares";
-import PeliculasAccion from "../componentes/PeliculasAccion";
-import PeliculasComedia from "../componentes/PeliculasComedia";
-import PeliculasTerror from "../componentes/PeliculasTerror";
-import PeliculasAnimadas from "../componentes/PeliculasAnimadas";
+import PeliculasPopulares from "../components/PeliculasPopulares";
+import PeliculasAccion from "../components/PeliculasAccion";
+import PeliculasComedia from "../components/PeliculasComedia";
+import PeliculasTerror from "../components/PeliculasTerror";
+import PeliculasAnimadas from "../components/PeliculasAnimadas";
 
 function Home() {
   return (
