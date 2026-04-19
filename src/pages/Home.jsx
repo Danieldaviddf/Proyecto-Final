@@ -4,31 +4,44 @@ import PeliculasAccion from "../components/PeliculasAccion";
 import PeliculasComedia from "../components/PeliculasComedia";
 import PeliculasTerror from "../components/PeliculasTerror";
 import PeliculasAnimadas from "../components/PeliculasAnimadas";
+import Portada from "../components/Portada";
+
 
 function Home() {
   return (
-    <div>
-      <h1 className="text-3xl text-center text-white mt-10 bg-orange-500/80">
-        Peliculas Populares
-      </h1>
+  <div>
+  <div className="relative w-full lg:h-[130vh]">
+    <Portada />
+
+    <div className="w-full px-4 mt-4 lg:absolute lg:bottom-6 lg:left-0 lg:z-30 lg:px-6">
+      <p className="text-center text-2xl md:text-3xl lg:text-4xl text-white font-bold drop-shadow-lg mb-4">
+        Películas Populares
+      </p>
+
       <PeliculasPopulares />
-      <h1 className="text-3xl text-center text-white mt-4 bg-orange-500/80">
-        Películas de Acción
-      </h1>
-      <PeliculasAccion />
-      <h1 className="text-3xl  text-center text-white mt-4 bg-orange-500/80">
-        Películas de Comedia
-      </h1>
-      <PeliculasComedia />
-      <h1 className="text-3xl  text-center text-white mt-4 bg-orange-500/80">
-        Películas de Terror
-      </h1>
-      <PeliculasTerror />
-      <h1 className="text-3xl  text-center text-white mt-4 bg-orange-500/80">
-        Películas Animadas
-      </h1>
-      <PeliculasAnimadas />
     </div>
+  </div>
+
+  <p className="text-center text-2xl md:text-3xl lg:text-4xl text-white mt-10 font-bold drop-shadow-lg">
+    Películas de Acción
+  </p>
+  <PeliculasAccion />
+
+  <p className="text-center text-2xl md:text-3xl lg:text-4xl text-white mt-10 font-bold drop-shadow-lg">
+    Películas de Comedia
+  </p>
+  <PeliculasComedia />
+
+  <p className="text-center text-2xl md:text-3xl lg:text-4xl text-white mt-10 font-bold drop-shadow-lg">
+    Películas de Terror
+  </p>
+  <PeliculasTerror />
+
+  <p className="text-center text-2xl md:text-3xl lg:text-4xl text-white mt-10 font-bold drop-shadow-lg">
+    Películas Animadas
+  </p>
+  <PeliculasAnimadas />
+</div>
   );
 }
 
