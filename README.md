@@ -58,7 +58,7 @@ src/
 
 Clone the repository:
 
-git clone https://github.com/alexisrrh/proyecto-Peliculas.git
+git clone https://github.com/Danieldaviddf/Proyecto-Final
 
 Install dependencies:
 
@@ -89,6 +89,7 @@ Currently looking for my first opportunity as a frontend developer.
 📩 Contact:
 
 GitHub: https://github.com/Danieldaviddf
+email: danieldaviddiazf@gmail.com
 
 ⭐ Note
 

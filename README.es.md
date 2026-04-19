@@ -60,7 +60,7 @@ src/
 ⚙️ Instalación y uso
 Clonar el repositorio:
 
-git clone https://github.com/alexisrrh/proyecto-Peliculas.git
+git clone https://github.com/Danieldaviddf/Proyecto-Final
 
 Instalar dependencias:
 
@@ -91,6 +91,7 @@ Actualmente en búsqueda de mi primera oportunidad como frontend junior.
 📩 Contactos:
 
 Github:https://github.com/Danieldaviddf
+email: danieldaviddiazf@gmail.com
 
 ⭐ Nota
 
