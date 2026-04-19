@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Favoritos from "../pages/Favoritos";
-import Modal from "../componentes/Modal";
+import Modal from "../components/Modal";
 import Search from "../pages/Busqueda";
 import Categorias from "../pages/Categorias";
 
