@@ -1,11 +1,10 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Favoritos from "../pages/Favoritos";
-import Animadas from "../pages/05-Animadas";
-import Populares from "../pages/01-Populares";
-import Accion1 from "../pages/02-Accion";
-import Terror from "../pages/03-Terror";
-import Comedia from "../pages/04-Comedia";
+import Modal from "../componentes/Modal";
+import Search from "../pages/Busqueda";
+import Categorias from "../pages/Categorias";
+
 
 export const AppRoutes = () => {
   return (
@@ -13,14 +12,15 @@ export const AppRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/favoritos" element={<Favoritos />} />
       
-      {/* Estas rutas deben estar en minúsculas para coincidir con tu Navbar */}
-      <Route path="/populares" element={<Populares />} />
-      <Route path="/accion" element={<Accion1 />} />
-      <Route path="/terror" element={<Terror />} />
-      <Route path="/comedia" element={<Comedia />} />
-      <Route path="/animadas" element={<Animadas />} />
-
-      {/* Redirección por si el usuario escribe algo mal */}
+  
+      <Route path="/populares" element={<Categorias />} />
+      <Route path="/accion" element={<Categorias />} />
+      <Route path="/terror" element={<Categorias />} />
+      <Route path="/comedia" element={<Categorias />} />
+      <Route path="/animadas" element={<Categorias />} />
+      <Route path="/modal/:id" element={<Modal/>} />
+      <Route path="/search/:texto?" element={<Search />} />
+   
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
