@@ -31,7 +31,7 @@ const Footer = () => {
                 <FaWhatsapp size={22} />
               </a>
               <a href="https://github.com/Danieldaviddf" className="hover:text-orange-300 transition-transform hover:scale-125">
-                <i class="text-lg fa-brands fa-github"></i>
+                <i className="text-lg fa-brands fa-github"></i>
               </a>
             </div>
           </div>
